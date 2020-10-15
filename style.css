@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    color: white;
+    overflow: hidden;
+}
+.input-data{
+    position: relative;
+    padding: 2em 2em 0 2em;
+}
+.input-data input[type=text]{
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+    background: darkgray;
+}
+.input-data input[type=text]:focus{
+    background: white;
+}
+.input-data input[type=button]{
+    background: rgb(47,150,163);
+    padding:0.5em 1em;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    
+}
+#result{
+    color: black;
+    display: block;
+    position: relative;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.39);
+    top: 150px;
+    opacity: 0;
+    
+}
+
+.weather-header{
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+img{
+    width: 3em;
+    height: auto;
+}
+.weather-temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+@keyframes weather-in{
+    to{
+        top: 0;
+    }
+}
